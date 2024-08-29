@@ -28,13 +28,7 @@ namespace DesafioProjetoHospedagem.Models
             {
                 // TODO: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
                 // *IMPLEMENTE AQUI*
-                try
-                {
-
-                }   catch(Exception ex)
-                {
-                    Console.WriteLine($"Quantidade de ocupantes invalida ou superior a capacidade{ex.Message}");
-                }
+                throw new Exception("A quantidade de hóspedes não pode exceder a capacidade da suíte");
             }
         }
 
